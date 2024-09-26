@@ -11,3 +11,6 @@ COPY pkg/ ./pkg/
 COPY main/ ./main/
 
 RUN go build -o serenade ./cmd/app/main.go
+
+EXPOSE 8080
+CMD ["./serenade"]
